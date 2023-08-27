@@ -37,3 +37,7 @@
 * complex64 (32位實數和虛數)
 * 聲明變量ex:
   * var complex1 complex128 = complex(2, -3)
+
+# 切片 slice
+  * 當切片的長度大於切片的容量時, 切片的容量會自動擴容
+    * 切片使用append時會檢查其容量是否夠用, 如果不夠用則會調用 runtime\slice.go的 growslice方法
